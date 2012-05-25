@@ -1,0 +1,45 @@
+<webapp-structure>
+  <registeredFiles>
+    <entry>
+      <string>currentBuild</string>
+      <path-set>
+        <pathsSet class="linked-hash-set">
+          <string>WEB-INF/applicationContext.xml</string>
+          <string>WEB-INF/dispatcher-servlet.xml</string>
+          <string>WEB-INF/glassfish-web.xml</string>
+          <string>WEB-INF/jsp/index.jsp</string>
+          <string>WEB-INF/jsp/login.jsp</string>
+          <string>WEB-INF/security.xml</string>
+          <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/.netbeans_automatic_build</string>
+          <string>WEB-INF/classes/com/ibm/idmr/controller/LoginController.class</string>
+          <string>WEB-INF/lib/spring-security-core-3.0.0.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-expression-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-core-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-asm-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/commons-logging-1.1.1.jar</string>
+          <string>WEB-INF/lib/spring-context-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-beans-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-tx-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/aopalliance-1.0.jar</string>
+          <string>WEB-INF/lib/spring-aop-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/aspectjrt-1.6.5.jar</string>
+          <string>WEB-INF/lib/aspectjweaver-1.6.5.jar</string>
+          <string>WEB-INF/lib/spring-security-config-3.0.0.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-security-web-3.0.0.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-web-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-context-support-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-instrument-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-instrument-tomcat-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-jdbc-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-orm-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-oxm-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-test-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-webmvc-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/jstl-1.1.2.jar</string>
+          <string>WEB-INF/lib/standard-1.1.2.jar</string>
+        </pathsSet>
+      </path-set>
+    </entry>
+  </registeredFiles>
+</webapp-structure>
