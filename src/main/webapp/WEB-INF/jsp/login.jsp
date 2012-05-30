@@ -12,8 +12,8 @@
             }
         </style>
     </head>
-    <body onload='document.f.j_username.focus();'>
-        <h3>Login with Username and Password (Custom Page)</h3>
+    
+    <body>
 
         <c:if test="${not empty error}">
             <div class="errorblock">
@@ -21,32 +21,52 @@
                 ${sessionScope["SPRING_SECURITY_LAST_EXCEPTION"].message}
             </div>
         </c:if>
+        
+            <h2>Sign in to Spitter</h2>
 
-        <form name='f' action="<c:url value='j_spring_security_check' />"
-              method='POST'>
 
-            <table>
+        <p>
+            If you've been using Spitter from your phone,
+            then that's amazing...we don't support IM yet.
+        </p>
+
+    <form method="POST" class="signin" action="<c:url value='j_spring_security_check' />">
+
+        <fieldset>
+            <table cellspacing="0">
                 <tr>
-                    <td>User:</td>
-                    <td><input type='text' name='j_username' value=''>
+                    <th><label for="username_or_email">Username or Email</label></th>
+                    <td><input id="username_or_email"
+                               name="j_username"
+                               type="text" />  
                     </td>
                 </tr>
                 <tr>
-                    <td>Password:</td>
-                    <td><input type='password' name='j_password' />
+                    <th><label for="password">Password</label></th>
+                    <td><input id="password"
+                               name="j_password"
+                               type="password" /> 
+                        <small><a href="/account/resend_password">Forgot?</a></small>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan='2'><input name="submit" type="submit"
-                                           value="submit" />
-                    </td>
+                    <th></th>
+                    <td><input id="remember_me"
+                               name="_spring_security_remember_me"
+                               type="checkbox"/> 
+                        <label for="remember_me" class="inline">Remember me</label></td>
                 </tr>
                 <tr>
-                    <td colspan='2'><input name="reset" type="reset" />
-                    </td>
+                    <th></th>
+                    <td><input name="commit" type="submit" value="Sign In" /></td>
                 </tr>
             </table>
+        </fieldset>
+    </form>
 
-        </form>
-    </body>
+    <script type="text/javascript">
+        document.getElementById('username_or_email').focus();
+    </script>
+</div>
+</body>
 </html>
