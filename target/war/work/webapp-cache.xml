@@ -8,11 +8,13 @@
           <string>WEB-INF/applicationContext.xml</string>
           <string>WEB-INF/dispatcher-servlet.xml</string>
           <string>WEB-INF/glassfish-web.xml</string>
+          <string>WEB-INF/jsp/admin.jsp</string>
           <string>WEB-INF/jsp/hello.jsp</string>
           <string>WEB-INF/jsp/index.jsp</string>
           <string>WEB-INF/jsp/login.jsp</string>
           <string>WEB-INF/security.xml</string>
           <string>WEB-INF/web.xml</string>
+          <string>WEB-INF/classes/com/ibm/idmr/controller/AdminController.class</string>
           <string>WEB-INF/classes/com/ibm/idmr/controller/LoginController.class</string>
           <string>WEB-INF/classes/mymessages.properties</string>
           <string>WEB-INF/lib/spring-security-core-3.0.6.RELEASE.jar</string>
@@ -30,10 +32,12 @@
           <string>WEB-INF/lib/spring-security-config-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-security-web-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-web-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-security-taglibs-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-security-acl-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-context-support-3.0.6.RELEASE.jar</string>
+          <string>WEB-INF/lib/spring-jdbc-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-instrument-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-instrument-tomcat-3.0.6.RELEASE.jar</string>
-          <string>WEB-INF/lib/spring-jdbc-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-orm-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-oxm-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-test-3.0.6.RELEASE.jar</string>

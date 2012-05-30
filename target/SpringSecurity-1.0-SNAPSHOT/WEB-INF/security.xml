@@ -5,18 +5,20 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
 
-	<http auto-config="true">
-		<intercept-url pattern="/welcome*" access="ROLE_USER" />
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/welcome*" access="hasRole('ROLE_USER')" />
                 <form-login login-page="/login" 
                 default-target-url="/welcome"
                 authentication-failure-url="/loginfailed" />
 		<logout logout-success-url="/logout" />
+		<intercept-url pattern="/admin/**" access="hasRole('SUPER_USER')"/>
 	</http>
       
 	<authentication-manager>
 		<authentication-provider>
 			<user-service>
-				<user name="test" password="test" authorities="ROLE_USER" />
+				<user name="John Smith" password="test" authorities="ROLE_USER" />
+				<user name="admin" password="admin" authorities="ROLE_USER,SUPER_USER" />
 			</user-service>
 		</authentication-provider>
 	</authentication-manager>
