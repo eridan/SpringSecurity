@@ -40,4 +40,9 @@ public class LoginController {
     public String indexPage () {
         return "index";
     }
+     
+     @RequestMapping(value = "/403", method = RequestMethod.GET)
+     public String accessDeniedPage () {
+         return "403";
+     }
 }

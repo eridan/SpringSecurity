@@ -8,12 +8,14 @@
           <string>WEB-INF/applicationContext.xml</string>
           <string>WEB-INF/dispatcher-servlet.xml</string>
           <string>WEB-INF/glassfish-web.xml</string>
+          <string>WEB-INF/jsp/403.jsp</string>
           <string>WEB-INF/jsp/hello.jsp</string>
           <string>WEB-INF/jsp/index.jsp</string>
           <string>WEB-INF/jsp/login.jsp</string>
           <string>WEB-INF/security.xml</string>
           <string>WEB-INF/web.xml</string>
           <string>WEB-INF/classes/com/ibm/idmr/controller/LoginController.class</string>
+          <string>WEB-INF/classes/com/ibm/idmr/utils/AccessDeniedHandler.class</string>
           <string>WEB-INF/classes/mymessages.properties</string>
           <string>WEB-INF/lib/spring-security-core-3.0.6.RELEASE.jar</string>
           <string>WEB-INF/lib/spring-core-3.0.6.RELEASE.jar</string>
