@@ -11,10 +11,6 @@
 	<mvc:annotation-driven />
 	<context:component-scan base-package="com.ibm.idmr" />
 
-	<!-- <bean id="accessDeniedHandler" class="com.ibm.idmr.utils.AccessDeniedHandler">
-		<property name="accessDeniedUrl" value="403" />
-	</bean> -->
-
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />

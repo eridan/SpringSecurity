@@ -5,22 +5,28 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
 
-	<http auto-config="true">
-		<intercept-url pattern="/welcome*" access="ROLE_USER" />
-                <form-login login-page="/login" 
-                default-target-url="/welcome"
-                authentication-failure-url="/loginfailed" />
+	<http auto-config="true" use-expressions="true">
+		<intercept-url pattern="/welcome*" access="hasRole('ROLE_SPITTER')"/>
+		<form-login login-page="/login" default-target-url="/welcome"
+			authentication-failure-url="/loginfailed" />
 		<logout logout-success-url="/logout" />
 		<access-denied-handler error-page="/403" />
 	</http>
-      
-	<authentication-manager>
-		<authentication-provider>
-			<user-service>
-				<user name="test" password="test" authorities="ROLE_USER" />
-				<user name="admin" password="admin" authorities="SUPER_USER" />
-			</user-service>
-		</authentication-provider>
+
+	<ldap-server root="dc=habuma,dc=com" ldif="classpath:users.ldif" />
+
+	<!--<start id="authentication_manager"/> -->
+	<authentication-manager alias="authenticationManager">
+		<authentication-provider user-service-ref="userService" />
 	</authentication-manager>
+	<!--<end id="authentication_manager"/> -->
+
+	<!--<start id="ldap_user_service"/> -->
+	<ldap-user-service id="userService" 
+		user-search-base="ou=people"
+		user-search-filter="(uid={0})" 
+		group-search-base="ou=groups"
+		group-search-filter="member={0}" />
+	<!--<end id="ldap_user_service"/> -->
 
 </beans:beans>
